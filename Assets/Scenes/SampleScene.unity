@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 489063628}
   - component: {fileID: 489063631}
   - component: {fileID: 489063632}
+  - component: {fileID: 489063633}
   m_Layer: 0
   m_Name: Dinossauro
   m_TagString: Untagged
@@ -294,6 +295,25 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   pontosText: {fileID: 1244784246}
+--- !u!95 &489063633
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489063627}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 98ab53d8c48c0764d955c914e30eadaf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +410,7 @@ GameObject:
   - component: {fileID: 523426578}
   - component: {fileID: 523426579}
   - component: {fileID: 523426580}
+  - component: {fileID: 523426581}
   m_Layer: 8
   m_Name: "Ch\xE3o(1)"
   m_TagString: Untagged
@@ -516,6 +537,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diferencaX: 23.971
   minX: -15.2
+--- !u!95 &523426581
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523426575}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 472a3f34a648ac74d8b985f1d96f7822, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &693589394
 GameObject:
   m_ObjectHideFlags: 0
