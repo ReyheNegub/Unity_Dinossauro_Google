@@ -7,7 +7,6 @@ public class Chao : MonoBehaviour
     public float diferencaX;
 
     public float minX;
-
     private void Update()
     {
         if (transform.position.x <= minX)
