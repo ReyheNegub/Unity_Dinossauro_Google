@@ -416,6 +416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 489063628}
   forcaPulo: 800
+  pontos: 0
   multiplicadorPontos: 12
   distanciaMinimaChao: 0.8
   layerChao:
@@ -778,7 +779,7 @@ GameObject:
   - component: {fileID: 693589396}
   - component: {fileID: 693589395}
   m_Layer: 0
-  m_Name: GeradorDeCacto
+  m_Name: GeradorInimigos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -799,8 +800,13 @@ MonoBehaviour:
   cactoPrefabs:
   - {fileID: 7843592930147515785, guid: 62d30b9c1a26c234dbb31dbffa3710a5, type: 3}
   - {fileID: 7843592930147515785, guid: 4d6516eb117b98848a302bbee2bf902c, type: 3}
-  dealyInicial: 1
-  delayEntreCactos: 1.5
+  dinossauroVoadorPrefab: {fileID: 2399013702547880209, guid: 942c8d2557beb664a9218260bf2c7351, type: 3}
+  dealyInicial: 0
+  delayEntreCactos: 2
+  dinossauroVoadorYMinimo: 0
+  dinossauroVoadorYMaximo: 1.5
+  dinossauroVoadorPontuacaoMinima: 300
+  jogadorScript: {fileID: 489063632}
 --- !u!4 &693589396
 Transform:
   m_ObjectHideFlags: 0
