@@ -13,6 +13,8 @@ public class Jogador : MonoBehaviour
 
     private float pontos;
 
+    private float highScore;
+
     public float multiplicadorPontos = 1;
 
     public float distanciaMinimaChao = 1;
@@ -20,10 +22,16 @@ public class Jogador : MonoBehaviour
     public LayerMask layerChao;
 
     public Text pontosText;
+    public Text highscoreText;
 
     public Animator animatorComponent;
 
     // Update is called once per frame
+    private void Start()
+    {
+        highScore = PlayerPrefs.GetFloat("HIGHSCORE");
+        highscoreText.text = $"Highscore: {Mathf.FloorToInt(highScore)}";
+    }
     void Update()
     {
         pontos += Time.deltaTime * multiplicadorPontos;
@@ -70,6 +78,11 @@ public class Jogador : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Inimigo"))
         {
+            if (pontos > highScore)
+            {
+                highScore = pontos;
+                PlayerPrefs.SetFloat("HIGHSCORE", highScore);
+            }
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
