@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Jogador : MonoBehaviour
@@ -30,8 +31,6 @@ public class Jogador : MonoBehaviour
     public AudioSource cemPontosAudioSource;
 
     public AudioSource fimDeJogoAudioSource;
-
-    public GameObject reiniciarButton;
 
     // Update is called once per frame
     private void Start()
@@ -102,9 +101,8 @@ public class Jogador : MonoBehaviour
                 PlayerPrefs.SetFloat("HIGHSCORE", highScore);
             }
             fimDeJogoAudioSource.Play();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
-            reiniciarButton.SetActive(true);
-            Time.timeScale = 0;
         }
     }
 }
